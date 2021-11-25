@@ -19,3 +19,5 @@ Compile it yourself! and enjoy this fantastic and historic chess engine!
 
 Best Regards-
 Kranium
+
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitlogo.bmp)
