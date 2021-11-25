@@ -1,5 +1,8 @@
 # ippolit
-The original revolutionary ground-breaking chess engine from 2009
+
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitlogo.bmp)
+
+Here is source code for the original revolutionary ground-breaking chess engine from 2009.
 
 Includes Visual studio project files...
 
@@ -20,4 +23,3 @@ Compile it yourself! and enjoy this fantastic and historic chess engine!
 Best Regards-
 Kranium
 
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitlogo.bmp)
