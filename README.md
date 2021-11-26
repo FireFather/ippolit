@@ -1,6 +1,12 @@
 # ippolit
 
 ![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitlogo.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit_red.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080a.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080b.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080c.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080d.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitpdb.bmp)
 
 Here is source code for the original revolutionary ground-breaking chess engine from 2009.
 
