@@ -18,7 +18,8 @@ https://web.archive.org/web/20111112091208/http://ippolit.wikispaces.com/
 
 for more info...
 
-Compile it yourself! and enjoy this fantastic and historic chess engine!
+Compile it yourself using the included project files, or check the 'Release' & 'x64/Release' sub-directories for pre-compiled binaries.
+Enjoy this fantastic and historic chess engine!
 
 Best Regards-
 Kranium
