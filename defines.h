@@ -2,8 +2,8 @@
 #define x64
 
 #define ENGINE "Ippolit"
-#define VERSION "110"
-#define AUTHOR "Kranium"
+#define VERSION "0.080a"
+#define AUTHOR "Yakov Petrovich Golyadkin"
 
 #ifdef x64
 #define PLATFORM "x64"

@@ -26,9 +26,6 @@ static uint8 get_input( void )
     static HANDLE stdin_h;
     DWORD value;
 
-    if (stdin->_cnt > 0)
-        return 1;
-
     if (!init)
         {
         init = 1;
@@ -1567,6 +1564,8 @@ static void uci( void )
     {
 	printf("id name %s %s %s\n", ENGINE, VERSION, PLATFORM);
 	printf("id author %s\n", AUTHOR);
+	printf("id copyright Yakov Petrovich Golyadkin, 92th year from Revolution, PUBLICDOMAIN (workers)\n");
+	printf("id dedicatory To Vladimir Ilyich\n");
     printf("option name Hash type spin default 256 min 4 max 4096\n");
     printf("uciok\n");
     fflush(stdout);
