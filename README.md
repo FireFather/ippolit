@@ -8,7 +8,7 @@
 ![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080d.bmp)
 ![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitpdb.bmp)
 
-Here is source code for the original revolutionary ground-breaking chess engine from 2009.
+Here is source code for the original revolutionary & ground-breaking chess engine from 2009.
 
 Includes Visual studio project files...
 
