@@ -1,21 +1,20 @@
-#ifdef x64
+#pragma once
 
-__inline int BSF( uint64 x )
-    {
-    int y;
-    _BitScanForward64(&y, x);
-    return y;
-    }
+#ifdef _WIN64
+__inline unsigned long BSF(const uint64 x)
+{
+	unsigned long y;
+	_BitScanForward64(&y, x);
+	return y;
+}
 
-__inline int BSR( uint64 x )
-    {
-    int y;
-    _BitScanReverse64(&y, x);
-    return y;
-    }
-
+__inline unsigned long BSR(const uint64 x)
+{
+	unsigned long y;
+	_BitScanReverse64(&y, x);
+	return y;
+}
 #else
-
 int BSF( uint64 x )
     {
     	{
@@ -49,5 +48,4 @@ int BSR( uint64 x )
             }
     	}
     }
-
 #endif

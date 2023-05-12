@@ -1,6 +1,7 @@
-
-#ifdef x64
-
+#pragma once
+#include "defines.h"
+#ifdef _WIN64
+#include <intrin.h>
 #ifdef __INTEL_COMPILER
 #define POPCNT(x) _mm_popcnt_u64(x)
 #define POPCNT15(x) _mm_popcnt_u64(x)

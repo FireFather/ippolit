@@ -1,3 +1,4 @@
+#pragma once
 static char string_1[64];
 static char string_2[64];
 static char start_position[80] = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
@@ -17,7 +18,7 @@ static sint32 capture_value[16][16];
 
 static uint16 history_table[16][64];
 static uint64 stack[1024];
-static uint64 eval_hash[(0x8000)];
+static uint64 eval_hash[0x8000];
 
 static uint64 square_set[64];
 static uint64 square_clear[64];

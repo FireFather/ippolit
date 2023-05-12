@@ -1,11 +1,10 @@
-
-#define x64
+#pragma once
 
 #define ENGINE "Ippolit"
 #define VERSION "0.080a"
 #define AUTHOR "Yakov Petrovich Golyadkin"
 
-#ifdef x64
+#ifdef _WIN64
 #define PLATFORM "x64"
 #else
 #define PLATFORM "w32"

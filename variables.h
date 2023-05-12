@@ -1,5 +1,7 @@
+#pragma once
+#include <setjmp.h>
 
-jmp_buf J;
+static jmp_buf J;
 
 static uint8 jump_ok;
 static uint8 move_easy;
@@ -42,8 +44,3 @@ type_board board;
 
 type_hash* hash_table;
 type_pawn_hash* pawn_hash_table;
-
-
-
-
-

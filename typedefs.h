@@ -1,4 +1,4 @@
-
+#pragma once
 typedef __int8 sint8;
 typedef __int16 sint16;
 typedef __int32 sint32;
