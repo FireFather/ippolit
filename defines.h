@@ -1,7 +1,7 @@
 #pragma once
 
 #define ENGINE "Ippolit"
-#define VERSION "0.080a"
+#define VERSION "051323"
 #define AUTHOR "Yakov Petrovich Golyadkin"
 
 #ifdef _WIN64
