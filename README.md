@@ -1,12 +1,13 @@
 # ippolit
 
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitlogo.bmp)
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit_red.bmp)
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080a.bmp)
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080b.bmp)
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080c.bmp)
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolit080d.bmp)
-![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/ippolitpdb.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-0.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-1.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-2.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-3.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-4.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-5.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-6.bmp)
+![alt tag](https://raw.githubusercontent.com/FireFather/ippolit/master/logos/ippolit-7.bmp)
 
 Here is source code for the original revolutionary & ground-breaking chess engine from 2009.
 
