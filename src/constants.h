@@ -1,5 +1,5 @@
 #pragma once
-static const uint8 left_90[64] =
+static const uint8_t left_90[64] =
 {
 	7, 15, 23, 31, 39, 47, 55, 63,
 	6, 14, 22, 30, 38, 46, 54, 62,
@@ -11,7 +11,7 @@ static const uint8 left_90[64] =
 	0, 8, 16, 24, 32, 40, 48, 56
 };
 
-static const uint8 left_45[64] =
+static const uint8_t left_45[64] =
 {
 	0, 2, 5, 9, 14, 20, 27, 35,
 	1, 4, 8, 13, 19, 26, 34, 42,
@@ -23,7 +23,7 @@ static const uint8 left_45[64] =
 	28, 36, 43, 49, 54, 58, 61, 63
 };
 
-static const uint8 right_45[64] =
+static const uint8_t right_45[64] =
 {
 	28, 21, 15, 10, 6, 3, 1, 0,
 	36, 29, 22, 16, 11, 7, 4, 2,
@@ -47,7 +47,7 @@ static const int shift[64] =
 	55, 55, 59, 59, 59, 62, 62, 64
 };
 
-static const uint64 castle_table[64] =
+static constexpr uint64_t castle_table[64] =
 {
 	Kkq, KQkq, KQkq, KQkq, kq, KQkq, KQkq, Qkq,
 	KQkq, KQkq, KQkq, KQkq, KQkq, KQkq, KQkq, KQkq,
@@ -59,43 +59,43 @@ static const uint64 castle_table[64] =
 	KQk, KQkq, KQkq, KQkq, KQ, KQkq, KQkq, KQq
 };
 
-static const uint8 trapped_bishop_squares[64] =
+static constexpr uint8_t trapped_bishop_squares[64] =
 {
-	0x00, C2, 0x00, 0x00, 0x00, 0x00, F2, 0x00,
-	B3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, G3,
-	B4, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, G4,
+	0x00, c2, 0x00, 0x00, 0x00, 0x00, f2, 0x00,
+	b3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, g3,
+	b4, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, g4,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-	B5, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, G5,
-	B6, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, G6,
-	0x00, C7, 0x00, 0x00, 0x00, 0x00, F7, 0x00
+	b5, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, g5,
+	b6, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, g6,
+	0x00, c7, 0x00, 0x00, 0x00, 0x00, f7, 0x00
 };
 
-static const uint8 trapped_bishop_squares_protected[64] =
+static constexpr uint8_t trapped_bishop_squares_protected[64] =
 {
-	0x00, D1, 0x00, 0x00, 0x00, 0x00, E1, 0x00,
-	C2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, F2,
-	C3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, F3,
+	0x00, d1, 0x00, 0x00, 0x00, 0x00, e1, 0x00,
+	c2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, f2,
+	c3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, f3,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-	C6, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, F6,
-	C7, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, F7,
-	0x00, D8, 0x00, 0x00, 0x00, 0x00, E8, 0x00
+	c6, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, f6,
+	c7, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, f7,
+	0x00, d8, 0x00, 0x00, 0x00, 0x00, e8, 0x00
 };
 
-static const uint64 rank_table[8] =
+static constexpr uint64_t rank_table[8] =
 {
 	0x00000000000000ff, 0x000000000000ff00, 0x0000000000ff0000, 0x00000000ff000000,
 	0x000000ff00000000, 0x0000ff0000000000, 0x00ff000000000000, 0xff00000000000000
 };
 
-static const uint64 file_table[8] =
+static constexpr uint64_t file_table[8] =
 {
 	0x0101010101010101, 0x0202020202020202, 0x0404040404040404, 0x0808080808080808,
 	0x1010101010101010, 0x2020202020202020, 0x4040404040404040, 0x8080808080808080
 };
 
-static const uint32 material_values[16] =
+static constexpr uint32_t material_values[16] =
 {
 	0, ((0 & 0xff) | (0x1440 << 8)), ((1 & 0xff) | (0x240 << 8)), 0, ((1 & 0xff) | (0x24 << 8)),
 	((1 & 0xff) | (0x48 << 8)), ((3 & 0xff) | (0x04 << 8)), ((6 & 0xff) | (0x1 << 8)), 0,
@@ -103,21 +103,21 @@ static const uint32 material_values[16] =
 	((1 & 0xff) | (0x120 << 8)), ((3 & 0xff) | (0xc << 8)), ((6 & 0xff) | (0x2 << 8))
 };
 
-static const uint64 trapped_rook_squares[64] =
+static constexpr uint64_t trapped_rook_squares[64] =
 {
-    0, (((uint64)1) << (A1)) | (((uint64)1) << (A2)), (((uint64)1) << (A1)) | (((uint64)1) << (A2)) | (((uint64)1) << (B1)) | (((uint64)1) << (B2)), 0,
-	0, (((uint64)1) << (H1)) | (((uint64)1) << (H2)) | (((uint64)1) << (G1)) | (((uint64)1) << (G2)), (((uint64)1) << (H1)) | (((uint64)1) << (H2)), 0,
+  0, static_cast<uint64_t>(1) << a1 | static_cast<uint64_t>(1) << a2, static_cast<uint64_t>(1) << a1 | static_cast<uint64_t>(1) << a2 | static_cast<uint64_t>(1) << b1 | static_cast<uint64_t>(1) << b2, 0,
+	0, static_cast<uint64_t>(1) << h1 | static_cast<uint64_t>(1) << h2 | static_cast<uint64_t>(1) << g1 | static_cast<uint64_t>(1) << g2, static_cast<uint64_t>(1) << h1 | static_cast<uint64_t>(1) << h2, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0,
-	0, (((uint64)1) << (A8)) | (((uint64)1) << (A7)), (((uint64)1) << (A8)) | (((uint64)1) << (A7)) | (((uint64)1) << (B8)) | (((uint64)1) << (B7)), 0,
-	0, (((uint64)1) << (H8)) | (((uint64)1) << (H7)) | (((uint64)1) << (G8)) | (((uint64)1) << (G7)), (((uint64)1) << (H8)) | (((uint64)1) << (H7)), 0
+	0, static_cast<uint64_t>(1) << a8 | static_cast<uint64_t>(1) << a7, static_cast<uint64_t>(1) << a8 | static_cast<uint64_t>(1) << a7 | static_cast<uint64_t>(1) << b8 | static_cast<uint64_t>(1) << b7, 0,
+	0, static_cast<uint64_t>(1) << h8 | static_cast<uint64_t>(1) << h7 | static_cast<uint64_t>(1) << g8 | static_cast<uint64_t>(1) << g7, static_cast<uint64_t>(1) << h8 | static_cast<uint64_t>(1) << h7, 0
 };
 
-static const uint32 white_bishop_xray[16] =
+static const uint32_t white_bishop_xray[16] =
 {
 	0, 196613, 196613, 196613,
 	0, 0, 196613, 0,
@@ -125,7 +125,7 @@ static const uint32 white_bishop_xray[16] =
 	0, 0, 983065, 655380
 };
 
-static const uint32 black_bishop_xray[16] =
+static const uint32_t black_bishop_xray[16] =
 {
 	0, 131077, 131077, 0,
 	0, 0, 983065, 655380,
@@ -133,7 +133,7 @@ static const uint32 black_bishop_xray[16] =
 	0, 0, 196613, 0
 };
 
-static const uint32 white_rook_xray[16] =
+static const uint32_t white_rook_xray[16] =
 {
 	0, 0, 196613, 196613,
 	196613, 196613, 0, 0,
@@ -141,7 +141,7 @@ static const uint32 white_rook_xray[16] =
 	131077, 131077, 0, 655380
 };
 
-static const uint32 black_rook_xray[16] =
+static const uint32_t black_rook_xray[16] =
 {
 	0, 131077, 131077, 0,
 	131077, 131077, 0, 655380,
@@ -149,7 +149,7 @@ static const uint32 black_rook_xray[16] =
 	196613, 196613, 0, 0
 };
 
-static const uint32 white_queen_xray_diagonal[16] =
+static const uint32_t white_queen_xray_diagonal[16] =
 {
 	0, 65538, 131076, 131076,
 	0, 0, 131076, 0,
@@ -157,7 +157,7 @@ static const uint32 white_queen_xray_diagonal[16] =
 	0, 0, 131077, 0
 };
 
-static const uint32 black_queen_xray_diagonal[16] =
+static const uint32_t black_queen_xray_diagonal[16] =
 {
 	0, 0, 131077, 0,
 	0, 0, 131077, 0,
@@ -165,7 +165,7 @@ static const uint32 black_queen_xray_diagonal[16] =
 	0, 0, 131076, 0
 };
 
-static const uint32 white_queen_xray_orthogonal[16] =
+static const uint32_t white_queen_xray_orthogonal[16] =
 {
 	0, 0, 131076, 131076,
 	131076, 131076, 0, 0,
@@ -173,7 +173,7 @@ static const uint32 white_queen_xray_orthogonal[16] =
 	131077, 131077, 0, 0
 };
 
-static const uint32 black_queen_xray_orthogonal[16] =
+static const uint32_t black_queen_xray_orthogonal[16] =
 {
 	0, 0, 131077, 0,
 	131077, 131077, 0, 0,
@@ -181,69 +181,69 @@ static const uint32 black_queen_xray_orthogonal[16] =
 	131076, 131076, 0, 0
 };
 
-static const int see_value[16] =
+static constexpr int see_value[16] =
 {
 	0, value_pawn, value_knight, 12345678, value_bishop, value_bishop, value_rook, value_queen,
 	0, value_pawn, value_knight, 12345678, value_bishop, value_bishop, value_rook, value_queen
 };
 
-static const uint32 king_danger_weight[16] =
+static const uint32_t king_danger_weight[16] =
 {
 	0, 1, 4, 9, 16, 25, 36, 49, 50, 50, 50, 50, 50, 50, 50, 50
 };
 
-static const uint32 queen_rank_endgame_value[8] =
+static const uint32_t queen_rank_endgame_value[8] =
 {
 	0, 0, 0, 327685, 655370, 1310740, 2621480, 0
 };
 
-static const uint64 rook_traps_king[8] =
+static constexpr uint64_t rook_traps_king[8] =
 {
 	0x0202020202020202, 0, 0, 0, 0, 0, 0, 0x4040404040404040
 };
 
-static const uint64 white_en_passant_table[8] =
+static constexpr uint64_t white_en_passant_table[8] =
 {
-	(((uint64)1) << (B4)) | (((uint64)1) << (B4)), (((uint64)1) << (A4)) | (((uint64)1) << (C4)),
-	(((uint64)1) << (B4)) | (((uint64)1) << (D4)), (((uint64)1) << (C4)) | (((uint64)1) << (E4)),
-	(((uint64)1) << (D4)) | (((uint64)1) << (F4)), (((uint64)1) << (E4)) | (((uint64)1) << (G4)),
-	(((uint64)1) << (F4)) | (((uint64)1) << (H4)), (((uint64)1) << (G4)) | (((uint64)1) << (G4))
+	static_cast<uint64_t>(1) << b4 | static_cast<uint64_t>(1) << b4, static_cast<uint64_t>(1) << a4 | static_cast<uint64_t>(1) << c4,
+	static_cast<uint64_t>(1) << b4 | static_cast<uint64_t>(1) << d4, static_cast<uint64_t>(1) << c4 | static_cast<uint64_t>(1) << e4,
+	static_cast<uint64_t>(1) << d4 | static_cast<uint64_t>(1) << f4, static_cast<uint64_t>(1) << e4 | static_cast<uint64_t>(1) << g4,
+	static_cast<uint64_t>(1) << f4 | static_cast<uint64_t>(1) << h4, static_cast<uint64_t>(1) << g4 | static_cast<uint64_t>(1) << g4
 };
 
-static const uint64 black_en_passant_table[8] =
+static constexpr uint64_t black_en_passant_table[8] =
 {
-	(((uint64)1) << (B5)) | (((uint64)1) << (B5)), (((uint64)1) << (A5)) | (((uint64)1) << (C5)),
-	(((uint64)1) << (B5)) | (((uint64)1) << (D5)), (((uint64)1) << (C5)) | (((uint64)1) << (E5)),
-	(((uint64)1) << (D5)) | (((uint64)1) << (F5)), (((uint64)1) << (E5)) | (((uint64)1) << (G5)),
-	(((uint64)1) << (F5)) | (((uint64)1) << (H5)), (((uint64)1) << (G5)) | (((uint64)1) << (G5))
+	static_cast<uint64_t>(1) << b5 | static_cast<uint64_t>(1) << b5, static_cast<uint64_t>(1) << a5 | static_cast<uint64_t>(1) << c5,
+	static_cast<uint64_t>(1) << b5 | static_cast<uint64_t>(1) << d5, static_cast<uint64_t>(1) << c5 | static_cast<uint64_t>(1) << e5,
+	static_cast<uint64_t>(1) << d5 | static_cast<uint64_t>(1) << f5, static_cast<uint64_t>(1) << e5 | static_cast<uint64_t>(1) << g5,
+	static_cast<uint64_t>(1) << f5 | static_cast<uint64_t>(1) << h5, static_cast<uint64_t>(1) << g5 | static_cast<uint64_t>(1) << g5
 };
 
-static const int promotions_white[8] =
+static constexpr int promotions_white[8] =
 {
 	0, 0, 0, 0, white_knight, white_king_bishop, white_rook, white_queen
 };
 
-static const int promotions_black[8] =
+static constexpr int promotions_black[8] =
 {
 	0, 0, 0, 0, black_knight, black_queen_bishop, black_rook, black_queen
 };
 
-static const uint8 opposing_pawns_multiplier[9] =
+static const uint8_t opposing_pawns_multiplier[9] =
 {
 	6, 5, 4, 3, 2, 1, 0, 0, 0
 };
 
-static const uint8 pawn_count_multiplier[9] =
+static const uint8_t pawn_count_multiplier[9] =
 {
 	6, 5, 4, 3, 2, 1, 0, 0, 0
 };
 
-static const int jumps[8] =
+static constexpr int jumps[8] =
 {
 	6, 10, 15, 17, -6, -10, -15, -17
 };
 
-static const uint8 blocked_pawn[64] =
+static const uint8_t blocked_pawn[64] =
 {
 	0, 0, 0, 0, 0, 0, 0, 0,
 	1, 1, 2, 2, 2, 2, 1, 1,
@@ -255,202 +255,213 @@ static const uint8 blocked_pawn[64] =
 	0, 0, 0, 0, 0, 0, 0, 0
 };
 
-static const sint32 passed_pawn_value[8] =
+static const int32_t passed_pawn_value[8] =
 {
 	0, 0, 0, 655370, 1310745, 2621490, 3932235, 0
 };
 
-static const sint32 outside_passed_pawn_value[8] =
+static const int32_t outside_passed_pawn_value[8] =
 {
 	0, 0, 0, 0, 131077, 327690, 655380, 0
 };
 
-static const sint32 protected_passed_pawn_value[8] =
+static const int32_t protected_passed_pawn_value[8] =
 {
 	0, 0, 0, 0, 327690, 655375, 983065, 0
 };
 
-static const sint32 connected_passed_pawn_value[8] =
+static const int32_t connected_passed_pawn_value[8] =
 {
 	0, 0, 0, 0, 327690, 655375, 1310750, 0
 };
 
-static const sint32 candidate_passed_pawn_value[8] =
+static const int32_t candidate_passed_pawn_value[8] =
 {
 	0, 0, 0, 327685, 655372, 1310745, 0, 0
 };
 
-static const uint32 my_passed_pawn_clear_value[8] =
+static const uint32_t my_passed_pawn_clear_value[8] =
 {
 	0, 0, 0, 0, 0, 196613, 327690, 0
 };
 
-static const uint32 opp_passed_pawn_clear_value[8] =
+static const uint32_t opp_passed_pawn_clear_value[8] =
 {
 	0, 0, 0, 0, 327690, 983070, 1638450
 };
 
-static const uint32 passed_pawn_is_mobile_value[8] =
+static const uint32_t passed_pawn_is_mobile_value[8] =
 {
 	0, 0, 0, 65538, 131075, 196613, 327690, 0
 };
 
-static const uint32 passed_pawn_is_free_value[8] =
+static const uint32_t passed_pawn_is_free_value[8] =
 {
 	0, 0, 0, 0, 327690, 655380, 1310760
 };
 
-static const sint32 my_king_pawn_distance[8] =
+static const int32_t my_king_pawn_distance[8] =
 {
 	0, 0, 0, 1, 2, 3, 5, 0
 };
 
-static const sint32 opp_king_pawn_distance[8] =
+static const int32_t opp_king_pawn_distance[8] =
 {
 	0, 0, 0, 2, 4, 6, 10, 0
 };
 
-static const uint8 aa_shelter[8] =
+static const uint8_t aa_shelter[8] =
 {
 	30, 0, 5, 15, 20, 25, 25, 25
 };
 
-static const uint8 ab_shelter[8] =
+static const uint8_t ab_shelter[8] =
 {
 	55, 0, 15, 40, 50, 55, 55, 55
 };
 
-static const uint8 ac_shelter[8] =
+static const uint8_t ac_shelter[8] =
 {
 	30, 0, 10, 20, 25, 30, 30, 30
 };
 
-static const uint8 aa_storm[8] =
+static const uint8_t aa_storm[8] =
 {
 	5, 0, 35, 15, 5, 0, 0, 0
 };
 
-static const uint8 ab_storm[8] =
+static const uint8_t ab_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 ac_storm[8] =
+static const uint8_t ac_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 ba_shelter[8] =
+static const uint8_t ba_shelter[8] =
 {
 	30, 0, 5, 15, 20, 25, 25, 25
 };
 
-static const uint8 bb_shelter[8] =
+static const uint8_t bb_shelter[8] =
 {
 	55, 0, 15, 40, 50, 55, 55, 55
 };
 
-static const uint8 bc_shelter[8] =
+static const uint8_t bc_shelter[8] =
 {
 	30, 0, 10, 20, 25, 30, 30, 30
 };
 
-static const uint8 ba_storm[8] =
+static const uint8_t ba_storm[8] =
 {
 	5, 0, 35, 15, 5, 0, 0, 0
 };
 
-static const uint8 bb_storm[8] =
+static const uint8_t bb_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 bc_storm[8] =
+static const uint8_t bc_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 cb_shelter[8] =
+static const uint8_t cb_shelter[8] =
 {
 	30, 0, 5, 15, 20, 25, 25, 25
 };
 
-static const uint8 cc_shelter[8] =
+static const uint8_t cc_shelter[8] =
 {
 	55, 0, 15, 40, 50, 55, 55, 55
 };
 
-static const uint8 cd_shelter[8] =
+static const uint8_t cd_shelter[8] =
 {
 	30, 0, 10, 20, 25, 30, 30, 30
 };
 
-static const uint8 cb_storm[8] =
+static const uint8_t cb_storm[8] =
 {
 	5, 0, 35, 15, 5, 0, 0, 0
 };
 
-static const uint8 cc_storm[8] =
+static const uint8_t cc_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 cd_storm[8] =
+static const uint8_t cd_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 dc_shelter[8] =
+static const uint8_t dc_shelter[8] =
 {
 	30, 0, 5, 15, 20, 25, 25, 25
 };
 
-static const uint8 dd_shelter[8] =
+static const uint8_t dd_shelter[8] =
 {
 	55, 0, 15, 40, 50, 55, 55, 55
 };
 
-static const uint8 de_shelter[8] =
+static const uint8_t de_shelter[8] =
 {
 	30, 0, 10, 20, 25, 30, 30, 30
 };
 
-static const uint8 dc_storm[8] =
+static const uint8_t dc_storm[8] =
 {
 	5, 0, 35, 15, 5, 0, 0, 0
 };
 
-static const uint8 dd_storm[8] =
+static const uint8_t dd_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 de_storm[8] =
+static const uint8_t de_storm[8] =
 {
 	10, 0, 50, 20, 10, 0, 0, 0
 };
 
-static const uint8 shelter_diag_a[8] =
+static const uint8_t shelter_diag_a[8] =
 {
 	10, 0, 2, 4, 6, 8, 10, 10
 };
 
-static const uint8 shelter_diag_b[8] =
+static const uint8_t shelter_diag_b[8] =
 {
 	8, 0, 2, 4, 6, 7, 8, 8
 };
 
-static const uint8 shelter_diag_c[8] =
+static const uint8_t shelter_diag_c[8] =
 {
 	6, 0, 2, 3, 4, 5, 6, 6
 };
 
-static const uint8 shelter_diag_d[8] =
+static const uint8_t shelter_diag_d[8] =
 {
 	4, 0, 1, 2, 3, 4, 4, 4
 };
 
-static const int PST[16][64] =
+static constexpr uint64_t mat_pawn_value = 32651535390539850;
+static constexpr uint64_t mat_knight_value = 95984289925890303;
+static constexpr uint64_t mat_bishop_value = 99924995435856148;
+static constexpr uint64_t mat_rook_value = 168605830360924557;
+static constexpr uint64_t mat_queen_value = 330174640275850032;
+static constexpr uint64_t mat_bishop_pair_value = 12948029319479325;
+static constexpr uint64_t mat_knight_pawn_bonus = 1407392063553536;
+static constexpr uint64_t mat_rook_pawn_penalty = 8590196741;
+static constexpr uint64_t mat_queen_rook_penalty = 4503659757568008;
+static constexpr uint64_t mat_2_rook_penalty = 9007319515136016;
+
+static const int pst[16][64] =
 {
 	{
 		// Dummy
@@ -475,7 +486,7 @@ static const int PST[16][64] =
 		0, 0, 0, 0, 0, 0, 0, 0
 	},
 	{
-		// wite knight
+		// white knight
 		-3801110, -2752529, -2031628, -1769481, -1769481, -2031628, -2752529, -3801110,
 		-2359311, -1310728, -589828, -327682, -327682, -589828, -1310728, -2359311,
 		-1310730, -262148, 458753, 720899, 720899, 458753, -262148, -1310730,

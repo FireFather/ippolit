@@ -22,6 +22,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <ProjectGuid>{9EC5F524-E8C4-4A4E-8C4B-E79A6FC22431}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -105,10 +106,15 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ippolit.c" />
+    <ClCompile Include="ippolit.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrays.h" />
@@ -117,13 +123,11 @@
     <ClInclude Include="defines.h" />
     <ClInclude Include="enum.h" />
     <ClInclude Include="functions.h" />
-    <ClInclude Include="kpk.h" />
     <ClInclude Include="macros.h" />
     <ClInclude Include="popcnt.h" />
     <ClInclude Include="pragma.h" />
     <ClInclude Include="rand.h" />
     <ClInclude Include="struct.h" />
-    <ClInclude Include="typedefs.h" />
     <ClInclude Include="variables.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

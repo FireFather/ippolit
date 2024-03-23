@@ -1,19 +1,19 @@
 #pragma once
 #include <setjmp.h>
 
-static jmp_buf J;
+static jmp_buf jbuf;
 
-static uint8 jump_ok;
-static uint8 move_easy;
-static uint8 bad_move;
-static uint8 move_battle;
-static uint8 analysis_mode;
-static uint8 stop_flag;
-static uint8 new_game;
+static uint8_t jump_ok;
+static uint8_t move_easy;
+static uint8_t bad_move;
+static uint8_t move_battle;
+static uint8_t analysis_mode;
+static uint8_t stop_flag;
+static uint8_t new_game;
 
-static uint32 hash_size = 256;
-static uint32 best_move;
-static uint32 ponder_move;
+static uint32_t hash_size = 256;
+static uint32_t best_move;
+static uint32_t ponder_move;
 
 static int previous_depth;
 static int ok_immediate;
@@ -23,24 +23,24 @@ static int best_score_previous;
 static int best_depth;
 static int depth_limit;
 
-static uint64 clock_start;
-static uint64 hash_mask;
-static uint64 age;
-static uint64 nodes_white;
-static uint64 nodes_black;
-static uint64 nodes_null;
-static uint64 randkey = 1;
+static uint64_t clock_start;
+static uint64_t hash_mask;
+static uint64_t age;
+static uint64_t nodes_white;
+static uint64_t nodes_black;
+static uint64_t nodes_null;
+static uint64_t randkey = 1;
 
-static sint64 battle_time;
-static sint64 easy_time;
-static sint64 normal_time;
-static sint64 previous_info;
-static sint64 absolute_time;
-static sint64 trouble_time;
-static sint64 increment_time;
+static int64_t battle_time;
+static int64_t easy_time;
+static int64_t normal_time;
+static int64_t previous_info;
+static int64_t absolute_time;
+static int64_t trouble_time;
+static int64_t increment_time;
 
-type_position* position;
-type_board board;
+static type_position* position;
+static type_board board;
 
-type_hash* hash_table;
-type_pawn_hash* pawn_hash_table;
+static type_hash* hash_table;
+static type_pawn_hash* pawn_hash_table;

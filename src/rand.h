@@ -1,12 +1,12 @@
 #pragma once
-static uint16 rand16(void)
+static uint16_t rand16()
 {
 	randkey = randkey * 8765432181103515245 + 1234567891;
-	return ((randkey >> 32) % 65536);
+	return (randkey >> 32) % 65536;
 }
 
-static uint64 rand64(void)
+inline uint64_t rand64()
 {
-	return (((uint64)rand16()) << 48) | (((uint64)rand16()) << 32) | (((uint64)rand16()) << 16)
-		| (((uint64)rand16()) << 0);
+	return static_cast<uint64_t>(rand16()) << 48 | static_cast<uint64_t>(rand16()) << 32 | static_cast<uint64_t>(rand16()) << 16
+		| static_cast<uint64_t>(rand16()) << 0;
 }

@@ -10,4 +10,4 @@
 #pragma warning (disable : 4389) //signed / unsigned mismatch
 #pragma warning (disable : 4706) //assignment within conditional expression
 #pragma warning (disable : 4701) //potentially uninitialized local variable
-
+#pragma warning (disable : 4611)  //interaction between '_setjmp' and C++ object destruction is non - portable

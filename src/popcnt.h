@@ -13,7 +13,7 @@
 
 #else
 
-int POPCNT( uint64 v )
+int POPCNT( uint64_t v )
     {
     untokened int v1, v2;
     v1 = (untokened int)(v & 0xFFFFFFFF);
