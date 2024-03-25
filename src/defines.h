@@ -1,7 +1,7 @@
 #pragma once
 
 #define ENGINE "Ippolit"
-#define VERSION "032324"
+#define VERSION "032424"
 #define AUTHOR "Yakov Petrovich Golyadkin"
 
 #ifdef _WIN64
@@ -9,5 +9,5 @@
 #else
 #define PLATFORM "w32"
 #endif
-#include <stdint.h>
 
+#include <stdint.h>

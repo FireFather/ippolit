@@ -1,4 +1,5 @@
 #pragma once
+#include <cstdint>
 #include "struct.h"
 
 char* notate(uint32_t, char*);
@@ -6,6 +7,7 @@ char* cp_or_mate(int, char*);
 char* write_fen(char*);
 
 int main();
+void engine_info();
 
 int eval_material();
 int white_king_danger(int);
@@ -99,7 +101,7 @@ void white_undo(uint32_t);
 void black_make(uint32_t);
 void black_undo(uint32_t);
 
-void input();
+void read_input();
 void age_increase();
 
 void init_bitboards();

@@ -44,9 +44,6 @@
     <ClInclude Include="macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="popcnt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="pragma.h">
       <Filter>Header Files</Filter>
     </ClInclude>

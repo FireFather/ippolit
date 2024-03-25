@@ -124,7 +124,6 @@
     <ClInclude Include="enum.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="macros.h" />
-    <ClInclude Include="popcnt.h" />
     <ClInclude Include="pragma.h" />
     <ClInclude Include="rand.h" />
     <ClInclude Include="struct.h" />
